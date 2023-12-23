@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "net.momirealms"
-version = "1.0"
+version = "1.1"
 
 repositories {
     mavenCentral()
@@ -15,8 +15,8 @@ repositories {
 
 dependencies {
     compileOnly("dev.folia:folia-api:1.20.1-R0.1-SNAPSHOT")
-    compileOnly("me.blackvein.quests:quests-api:4.8.3")
-    compileOnly("me.blackvein.quests:quests-core:4.8.3")
+    compileOnly("me.pikamug.quests:quests-api:5.0.0-rc.3")
+    compileOnly("me.pikamug.quests:quests-core:5.0.0-rc.3")
     compileOnly("com.github.PikaMug:LocaleLib:3.6")
-    compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.0-beta-6")
+    compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.0.2")
 }
