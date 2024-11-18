@@ -1,4 +1,4 @@
-package net.momirealms.customfishing.hook;
+package net.momirealms.customfishing.quests;
 
 import me.pikamug.quests.Quests;
 import me.pikamug.quests.module.BukkitCustomObjective;
@@ -37,7 +37,7 @@ public class IDQuest extends BukkitCustomObjective implements Listener {
             if (event.getAmount() > 0) {
                 Loot loot = event.getLoot();
                 String userInput = (String) map.get("Loot ID");
-                if (userInput.equals(loot.getID())) {
+                if (userInput.equals(loot.id())) {
                     incrementObjective(event.getPlayer().getUniqueId(), this, quest, event.getAmount());
                 }
             }

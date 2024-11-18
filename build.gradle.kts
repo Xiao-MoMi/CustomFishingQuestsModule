@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "net.momirealms"
-version = "1.2"
+version = "1.3"
 
 repositories {
     mavenCentral()
@@ -18,5 +18,5 @@ dependencies {
     compileOnly("me.pikamug.quests:quests-api:5.0.1")
     compileOnly("me.pikamug.quests:quests-core:5.0.1")
     compileOnly("com.github.PikaMug:LocaleLib:3.6")
-    compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.0.2")
+    compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.2.32")
 }

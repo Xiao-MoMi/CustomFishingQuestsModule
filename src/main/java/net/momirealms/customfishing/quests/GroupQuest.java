@@ -1,8 +1,7 @@
-package net.momirealms.customfishing.hook;
+package net.momirealms.customfishing.quests;
 
 import me.pikamug.quests.Quests;
 import me.pikamug.quests.module.BukkitCustomObjective;
-import me.pikamug.quests.module.CustomObjective;
 import me.pikamug.quests.quests.Quest;
 import net.momirealms.customfishing.api.event.FishingResultEvent;
 import net.momirealms.customfishing.api.mechanic.loot.Loot;
@@ -37,9 +36,9 @@ public class GroupQuest extends BukkitCustomObjective implements Listener {
             }
             if (event.getAmount() > 0) {
                 Loot loot = event.getLoot();
-                if (loot.getLootGroup() != null) {
+                if (loot.lootGroup() != null) {
                     String userInput = (String) map.get("Group ID");
-                    for (String group : loot.getLootGroup()) {
+                    for (String group : loot.lootGroup()) {
                         if (userInput.equals(group)) {
                             incrementObjective(event.getPlayer().getUniqueId(), this, quest, event.getAmount());
                         }
